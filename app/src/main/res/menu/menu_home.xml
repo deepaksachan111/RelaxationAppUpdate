@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.server18.relaxationapp.activity.ImageSliderActivity">
+    <item android:id="@+id/notifiction" android:title=""
+        android:icon="@mipmap/shopping_cart"
+        android:orderInCategory="100" app:showAsAction="always" />
+
+    <item android:id="@+id/custum_activity" android:title=""
+        android:icon="@mipmap/show_all"
+        android:orderInCategory="101" app:showAsAction="always"/>
+    <!-- <item android:id="@+id/shpincart" android:title=""
+         android:icon="@mipmap/shopping_cart"
+         android:orderInCategory="101" app:showAsAction="always"--> />
+</menu>

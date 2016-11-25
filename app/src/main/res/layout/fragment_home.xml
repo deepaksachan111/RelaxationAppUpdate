@@ -1,0 +1,351 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.server18.relaxationapp.HomeFragment">
+
+
+
+
+
+
+
+
+
+        <ScrollView
+
+            android:layout_above="@+id/bottomBarLinear"
+            android:padding="10dp"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <com.daimajia.slider.library.SliderLayout
+                    android:visibility="gone"
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    custom:pager_animation="Accordion"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation_span="1100"
+                    android:layout_height="200dp"/>
+
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:visibility="gone"
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    custom:selected_color="#0095BF"
+                    custom:unselected_color="#55333333"
+                    custom:shape="oval"
+                    custom:selected_padding_left="5dp"
+                    custom:selected_padding_right="5dp"
+                    custom:unselected_padding_left="5dp"
+                    custom:unselected_padding_right="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    custom:selected_width="6dp"
+                    custom:selected_height="6dp"
+                    custom:unselected_width="6dp"
+                    custom:unselected_height="6dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:visibility="gone"
+                    android:id="@+id/custom_indicator2"
+                    style="@style/AndroidImageSlider_Corner_Oval_Orange"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:visibility="gone"
+                    android:layout_below="@id/slider"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardBackgroundColor="@color/translucent_black"
+                    card_view:cardElevation="4dp"
+                    android:layout_margin="2dp"
+                    card_view:contentPadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/nature2"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="#FFf"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:text="Event"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/nature3"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="#FFf"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:text="Book"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:src="@drawable/images4"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="#FFf"/>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:text="Audio Book"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_shape"
+        android:orientation="vertical"
+        android:id="@+id/li_cenet_draw_image"
+        android:layout_width="280dp"
+        android:layout_height="280dp">
+
+
+        <FrameLayout
+            android:background="@drawable/circle_shaple_center"
+            android:layout_centerInParent="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/frameLayout">
+
+         <!--   <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="10\ndays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_courage"
+                android:layout_gravity="center"
+                android:src="@mipmap/eyes_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+          <!--  <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="10\ndays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />-->
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:rotation="0"
+                    android:background="#CD7F32"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    />
+
+                <View
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:rotation="0"
+                    android:background="#CD7F32"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:id="@+id/linearLayout2"
+                    />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+<!--
+        <LinearLayout
+            android:padding="25dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlay_courage">
+
+
+
+            <ImageView
+                android:id="@+id/iv_courage"
+                android:layout_gravity="center"
+                android:src="@mipmap/eyes_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:shadowColor="#000"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="1"
+                android:id="@+id/tv_courage"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Courage is looking fear right.."
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>-->
+
+
+
+      <!--  <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#CD7F32"
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />-->
+
+
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout_meditation"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+
+                android:id="@+id/iv_meditation"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/alarm_clock_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_meditation"
+                android:layout_gravity="center"
+                android:text="Meditation"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_breath"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/iv_breath_home_frage"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/human_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_breath_home_frage"
+                android:layout_gravity="center"
+                android:text="Breathe"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

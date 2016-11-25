@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RelaxationApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_breath_item">BreathItemActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_breath_schedule">BreathScheduleActivity</string>
+</resources>

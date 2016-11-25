@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Widget.ActionButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center"
+    android:id="@+id/relative_layout1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/badge_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@mipmap/notification_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/badge_notification_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/relative_layout_item_count"
+            android:background="@android:drawable/ic_notification_overlay"
+            android:text="2"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:id="@+id/badge_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/badge_layout1">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_item_count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@mipmap/shopping_cart" />
+        </RelativeLayout>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/badge_shoppingcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/relative_layout_item_count1"
+            android:background="@android:drawable/ic_notification_overlay"
+            android:text="1"
+            android:textColor="#FFF"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

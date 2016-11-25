@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_book_audio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.server18.relaxationapp.activity.EventBookAudioActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="1dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/event_page"
+            android:text="Event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="1dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/books_page"
+            android:text="Books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="1dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/audio_page"
+            android:text="Audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

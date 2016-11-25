@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/linear_bottom"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/translucent_black"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back_home_bottom_icon"
+            android:src="@mipmap/home_bottom_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bottom_breath_tv"
+            android:textColor="@color/white"
+            android:text="BREATH"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bottom_sounds_tv"
+            android:textColor="@color/white"
+            android:text="SOUNDS"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bottom_photos_tv"
+            android:textColor="@color/white"
+            android:text="PHOTOS"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/bottom_words_tv"
+            android:textColor="@color/white"
+            android:text="WORDS"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

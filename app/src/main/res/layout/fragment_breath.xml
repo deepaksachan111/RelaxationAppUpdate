@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.server18.relaxationapp.fragment.BreathFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+<!--
+        <LinearLayout
+
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_visibility_first"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="9"
+                android:text="Technique One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@mipmap/arrow_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+      &lt;!&ndash;     start linear technique visibility hide show ...............................................&ndash;&gt;
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:id="@+id/breath_frag_starttime"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:text="Start Time"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+                <VideoView
+                    android:id="@+id/breath_frag_videoview_first"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp" />
+
+            
+
+            &lt;!&ndash;     end linear technique visibility hide show ...............................................&ndash;&gt;
+-->
+        </LinearLayout>
+
+    <ListView
+        android:listSelector="@drawable/list_item_selector"
+        android:id="@+id/listview_breath_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </ListView>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tranparent_circle_bg"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:text="These quotes don’t assume any belief on your part. "
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:id="@+id/textDialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@mipmap/close_2"
+        android:id="@+id/declineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Cancel "
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:padding="10dp"
+        android:background="@drawable/button_bg_round_press_effect"
+        android:src="@mipmap/play"
+        android:id="@+id/imageDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

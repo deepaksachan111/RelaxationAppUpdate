@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#443321"
+    android:theme="@style/ToolBarStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_home_menudrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+           android:padding="4dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Relaxation App"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <ImageView
+
+            android:src="@mipmap/shopping_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/iv_shoping_cart"
+            android:layout_below="@+id/iv_home_menudrawer"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="55dp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_showall"
+           android:layout_marginRight="10dp"
+            android:src="@mipmap/show_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
